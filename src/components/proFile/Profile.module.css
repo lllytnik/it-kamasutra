@@ -1,0 +1,28 @@
+.profile {
+    background-color: transparent;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.profileWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.profileWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.сompanionTitle {
+    margin: 0;
+    text-decoration: none;
+    line-height: 1.2;
+    font-size: 20px;
+    color: #111;
+}
+
+.profileEmail {
+    color: #adb5bd;
+    font-size: 12px;
+}

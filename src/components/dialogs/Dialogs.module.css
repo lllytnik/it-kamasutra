@@ -1,0 +1,16 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: minmax(100px, 200px) 1fr;
+    gap: 10px;
+    height: 100%;
+}
+
+.dialog {
+    background-color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 3%);
+}
+
+.messages {
+    background-color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 3%);
+}

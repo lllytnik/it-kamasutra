@@ -1,0 +1,18 @@
+body {
+  background-color: #f7f7f7;
+}
+
+.app {
+
+  height: 100vh;
+}
+
+.app__container {
+  margin: 0 auto;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: minmax(100px, 200px) 1fr;
+  box-sizing: border-box;
+  padding: 15px;
+  max-width: 1200px;
+}

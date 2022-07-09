@@ -1,0 +1,57 @@
+.myPost {
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 3%);
+}
+
+.myPostForm {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.formWrap {
+    width: 80%;
+}
+
+
+label,
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+
+textarea {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formBtn {
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px #999;
+    background-color: #ffffff;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.formBtn:hover {
+    box-shadow: 1px 1px 1px #999;
+    background-color: #ee3434;
+    color: #ffffff;
+}

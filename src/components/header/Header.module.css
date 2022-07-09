@@ -1,0 +1,18 @@
+.header {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 3%);
+    border-radius: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.headerLogo {
+    padding: 5px;
+    max-width: 60px;
+}
+
+.logoImg {
+    width: 100%;
+}

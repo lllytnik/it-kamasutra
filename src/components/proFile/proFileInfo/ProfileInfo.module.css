@@ -1,0 +1,31 @@
+.proFile {
+    background-color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 3%);
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 100%;
+}
+
+.proFileWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.proFileWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.сompanionTitle {
+    margin: 0;
+    text-decoration: none;
+    line-height: 1.2;
+    font-size: 20px;
+    color: #111;
+}
+
+.proFileEmail {
+    color: #adb5bd;
+    font-size: 12px;
+}

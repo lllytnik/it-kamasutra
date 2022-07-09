@@ -1,0 +1,70 @@
+:root {
+    --theme-color: #05f;
+}
+
+
+
+.messages {
+    background-color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 3%);
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.messagesList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.сompanionInner {
+    display: flex;
+    align-items: center;
+}
+
+.companionWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.сompanionLink {
+    text-decoration: none;
+    font-size: 14px;
+    color: #0c0c0d;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.messagesTime {
+    font-size: 11px;
+    font-weight: 500;
+    color: #aaaaaa;
+    margin-bottom: 0px;
+}
+
+.сompanionText {
+    padding: 14px;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 8px 30px rgb(0 0 0 / 5%);
+    font-size: 13px;
+    color: #000;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.сompanionText:after {
+    background-color: var(--theme-color);
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 1;
+}

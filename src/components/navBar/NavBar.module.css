@@ -1,0 +1,33 @@
+.nav {
+    box-sizing: border-box;
+    padding: 10px;
+    grid-area: 2 / 1 / 3 / 2;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 3%);
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navItem {}
+
+.navLink {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #888;
+}
+
+.activeLink {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #ee3434;
+}
