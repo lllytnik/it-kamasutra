@@ -28,7 +28,7 @@ const NavBar = () => {
           </NavLink>
         </li>
         <li className={s.navItem}>
-          <NavLink className={setActive} to="/ettings">
+          <NavLink className={setActive} to="/settings">
             Settings
           </NavLink>
         </li>
