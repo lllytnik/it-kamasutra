@@ -17,6 +17,10 @@
     margin: 0;
 }
 
+.сompanion {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 3%);
+}
+
 .сompanionInner {
     display: flex;
     align-items: center;

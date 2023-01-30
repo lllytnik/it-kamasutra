@@ -4,10 +4,10 @@ import userPic from "../../../images/dialog/user1.png";
 
 const MessageCom = (props) => {
   return (
-    <div class={s.сompanion}>
+    <li className={s.сompanion}>
       <div className={s.сompanionInner}>
-        <img class={s.companionAvatar} src={userPic} alt="logo" />
-        <div class={s.companionWrap}>
+        <img className={s.companionAvatar} src={userPic} alt="logo" />
+        <div className={s.companionWrap}>
           <a className={s.сompanionLink} href="">
             {props.name}
           </a>
@@ -15,21 +15,22 @@ const MessageCom = (props) => {
         </div>
       </div>
       <p class={s.сompanionText}>{props.text}</p>
-    </div>
+    </li>
   );
 };
 
 const Messages = () => {
+  let messages = [
+    { id: 1, name: 'Димон', message: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', time: '2:43' },
+    { id: 2, name: 'Димон', message: 'Sit amet consectetur adipisicing elit.', time: '4:43' },
+    { id: 3, name: 'Димон', message: 'Lorem ipsum dolor.', time: '7:43' },
+    { id: 4, name: 'Димон', message: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', time: '8:43' }
+  ]
+  let messagesElements = messages.map(m => <MessageCom time={m.time} name={m.name} text={m.message} />)
   return (
     <div className={s.messages}>
       <ul className={s.messagesList}>
-        <li className={s.messagesItem}>
-          <MessageCom
-            time="2:43"
-            name="Димон"
-            text="Lorem ipsum dolor, sit amet consectetur adipisicing elit."
-          />
-        </li>
+        {messagesElements}
       </ul>
     </div>
   );
