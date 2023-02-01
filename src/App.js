@@ -14,7 +14,6 @@ function App() {
           <Header />
           <NavBar />
           <Main />
-          <Footer />
         </div>
       </div>
     </BrowserRouter>
