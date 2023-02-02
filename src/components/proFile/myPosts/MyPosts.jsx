@@ -1,14 +1,11 @@
 import React from "react";
 import s from "./Myposts.module.css";
 import Post from "./post/Post";
-import usersPic from "../../../images/dialog/user1.png";
 
-const MyPosts = () => {
-  let posts = [
-    { id: 1, message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', name: 'Иван', time: '2:30', img: usersPic },
-    { id: 2, message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', name: 'Иван', time: '3:40', img: usersPic }
-  ]
-  let postsElements = posts.map(p => <Post message={p.message} name={p.name} time={p.time} img={p.img} />)
+
+const MyPosts = (props) => {
+
+  let postsElements = props.posts.map(p => <Post message={p.message} name={p.name} time={p.time} img={p.img} />)
   return (
     <>
       <div className={s.myPost}>
