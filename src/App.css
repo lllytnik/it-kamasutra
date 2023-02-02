@@ -16,3 +16,9 @@ body {
   padding: 15px;
   max-width: 1200px;
 }
+
+.main {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: transparent;
+  box-sizing: border-box;
+}
