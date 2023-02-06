@@ -1,4 +1,5 @@
 import usersPic from "../images/dialog/user1.png";
+import { rerenderEntireTree } from "../render";
 let state = {
     profilePage: {
         posts: [
@@ -24,4 +25,17 @@ let state = {
     }
 
 }
+
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 5,
+        name: 'Санек',
+        message: postMessage,
+        time: '18:00',
+        img: usersPic
+    };
+    state.profilePage.posts.push(newPost);
+    rerenderEntireTree(state);
+}
+
 export default state;
