@@ -5,8 +5,8 @@ const ProfileInfo = () => {
   return (
     <div className={s.proFile}>
       <div className={s.proFileWrapper}>
-        <img class={s.proFileAvatar} src={usersPic} />
-        <div class={s.proFileWrap}>
+        <img className={s.proFileAvatar} src={usersPic} />
+        <div className={s.proFileWrap}>
           <h3 className={s.сompanionTitle} href="">
             Иван
           </h3>
