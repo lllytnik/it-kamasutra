@@ -1,5 +1,7 @@
 import usersPic from "../images/dialog/user1.png";
-import { rerenderEntireTree } from "../render";
+let rerenderEntireTree = () => {
+    console.log('he he');
+}
 let state = {
     profilePage: {
         posts: [
@@ -27,7 +29,7 @@ let state = {
 
 }
 
-export let addPost = () => {
+export const addPost = () => {
     let newPost = {
         id: 5,
         name: 'Санек',
@@ -40,9 +42,12 @@ export let addPost = () => {
     rerenderEntireTree(state);
 }
 
-export let updateNewPostText = (newText) => {
+export const updateNewPostText = (newText) => {
     state.profilePage.newPostText = newText;
     rerenderEntireTree(state);
+}
+export const subscribe = (observer) => {
+    rerenderEntireTree = observer;
 }
 
 export default state;
