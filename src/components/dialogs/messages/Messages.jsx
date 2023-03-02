@@ -18,11 +18,11 @@ export const MessageCom = (props) => {
     </li>
   );
 };
-
 const Messages = (props) => {
-
-  let messagesElements = props.dialogsPage.messages.map(m => <MessageCom time={m.time} name={m.name} text={m.message} />)
-  let newMessageBody = props.dialogsPage.newMessageBody;
+  debugger
+  let state = props.dialogsPage;
+  let messagesElements = state.messages.map(m => <MessageCom time={m.time} name={m.name} text={m.message} />);
+  let newMessageBody = state.newMessageBody;
 
   let onSendMessageClick = () => {
     props.sendMessage();
@@ -31,7 +31,6 @@ const Messages = (props) => {
     let body = e.target.value;
     props.updateNewMessageBody(body);
   }
-
   return (
     <div className={s.messages}>
       <ul className={s.messagesList}>
@@ -43,8 +42,10 @@ const Messages = (props) => {
           <textarea id="myMessageText" value={newMessageBody} onChange={onNewMessageChange} name="myMessageText" placeholder="So..." rows="5" />
         </div>
         <input id="myMessage" type="button" onClick={onSendMessageClick} value="Отправить" className={s.formBtn} />
+
       </form>
     </div>
   );
 };
+
 export default Messages;
