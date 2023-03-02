@@ -1,9 +1,8 @@
 import React from "react";
 import s from "./Messages.module.css";
 import userPic from "../../../images/dialog/user1.png";
-import { updateNewMessageBodyCreater, sendMessageCreator } from "../../../redux/dialogsReducer";
 
-const MessageCom = (props) => {
+export const MessageCom = (props) => {
   return (
     <li className={s.сompanion}>
       <div className={s.сompanionInner}>
@@ -19,18 +18,20 @@ const MessageCom = (props) => {
     </li>
   );
 };
+
 const Messages = (props) => {
 
-  let messagesElements = props.state.messages.map(m => <MessageCom time={m.time} name={m.name} text={m.message} />)
-  let newMessageBody = props.state.newMessageBody;
-  let onSendMessageClick = () => {
-    props.dispatch(sendMessageCreator());
-  }
+  let messagesElements = props.dialogsPage.messages.map(m => <MessageCom time={m.time} name={m.name} text={m.message} />)
+  let newMessageBody = props.dialogsPage.newMessageBody;
 
+  let onSendMessageClick = () => {
+    props.sendMessage();
+  }
   let onNewMessageChange = (e) => {
     let body = e.target.value;
-    props.dispatch(updateNewMessageBodyCreater(body));
+    props.updateNewMessageBody(body);
   }
+
   return (
     <div className={s.messages}>
       <ul className={s.messagesList}>
