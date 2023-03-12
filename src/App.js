@@ -4,7 +4,7 @@ import Header from './components/header/Header';
 import NavBar from './components/navBar/NavBar';
 import { Routes, Route } from "react-router-dom";
 import Profile from "./components/proFile/Profile";
-import Dialogs from "./components/dialogs/Dialogs";
+import DialogsContainer from "./components/dialogs/DialogsContainer";
 
 function App(props) {
   debugger
@@ -15,8 +15,8 @@ function App(props) {
         <NavBar />
         <main className="main">
           <Routes>
-            <Route path="/dialogs/*" element={<Dialogs store={props.store} state={props.state.dialogsPage} dispatch={props.dispatch} />} />
-            <Route path="/profile" element={<Profile store={props.store} />} />
+            <Route path="/dialogs/*" element={<DialogsContainer />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         </main>
       </div>
