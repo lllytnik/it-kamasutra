@@ -17,7 +17,7 @@ const Message = (props) => {
                     <span className={s.messagesTime}>{props.time}</span>
                 </div>
             </div>
-            <p class={s.сompanionText}>{props.text}</p>
+            <p className={s.сompanionText}>{props.text}</p>
         </li>
     );
 }

@@ -19,14 +19,17 @@ const profileReducer = (state = initialState, action) => {
                 time: '18:00',
                 img: usersPic
             };
-            state.posts.push(newPost);
-            state.newPostText = '';
-            return state;
-    }
-    switch (action.type) {
+            return {
+                ...state,
+                posts: [...state.posts, newPost],
+                newPostText: ''
+            };
+
         case UPDATE_NEW_POST_TEXT:
-            state.newPostText = action.newText;
-            return state;
+            return {
+                ...state,
+                newPostText: action.newText
+            }
         default:
             return state;
     }
